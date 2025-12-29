@@ -27,27 +27,26 @@ To write a Python program that demonstrates **operator overloading** by overload
 ## 💻 Program
 ```
 
-class Beans(): 
-     def type(self): 
-       print("Vegetable") 
-     def color(self):
-       print("Green") 
-class Mango(): 
-     def type(self): 
-       print("Fruit") 
-     def color(self): 
-       print("Yellow")      
-def func(obj): 
-       obj.type()
-       obj.color()
-obj_beans = Beans() 
-obj_mango = Mango() 
-func(obj_beans) 
-func(obj_mango)
+class  A:
+    def __init__(self,value):
+        self.value=value
+    def __gt__(self,other):
+        return self.value >other.value
+
+ob1=A(200)
+ob2=A(30)
+
+if ob2<ob1:
+    print("ob2 is less than ob1")
+else:
+    print("ob1 is less than or equal to ob2")
+
+
+
 
 ```
 ## Output
-<img width="561" height="123" alt="image" src="https://github.com/user-attachments/assets/c4b39e8a-4089-4c5d-9409-75598c6b86d2" />
-e1b" />
+<img width="558" height="86" alt="image" src="https://github.com/user-attachments/assets/e82a5466-03ba-4756-8dac-ec501721c534" />
+
 
 ## Result
