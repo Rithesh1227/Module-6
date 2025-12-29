@@ -26,21 +26,28 @@ To write a Python program that demonstrates **operator overloading** by overload
 
 ## 💻 Program
 ```
-class Fish:
-    def type(self):
-        print("fish")
 
-class Shark(Fish):
-    def type(self):
-        print("shark")
+class Beans(): 
+     def type(self): 
+       print("Vegetable") 
+     def color(self):
+       print("Green") 
+class Mango(): 
+     def type(self): 
+       print("Fruit") 
+     def color(self): 
+       print("Yellow")      
+def func(obj): 
+       obj.type()
+       obj.color()
+obj_beans = Beans() 
+obj_mango = Mango() 
+func(obj_beans) 
+func(obj_mango)
 
-obj_goldfish = Fish()
-obj_hammerhead = Shark()
-
-for obj in (obj_goldfish, obj_hammerhead):
-    obj.type()
 ```
 ## Output
-<img width="643" height="270" alt="image" src="https://github.com/user-attachments/assets/cca49f07-881d-4f1c-9237-3fa968e2ce1b" />
+<img width="561" height="123" alt="image" src="https://github.com/user-attachments/assets/c4b39e8a-4089-4c5d-9409-75598c6b86d2" />
+e1b" />
 
 ## Result
